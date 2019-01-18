@@ -1,0 +1,43 @@
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+  <mat-card class="login-card">
+  <mat-card-header class="login-card-header">
+    <mat-card-title class="login-card-title pull-left">Login</mat-card-title>
+  </mat-card-header>
+  <mat-card-content class="login-card-content">
+    <div class="form-group">
+        <div class="form-block">
+          <input class="form-control"
+            name="username"
+            id="username"
+            placeholder="user id"
+            formControlName="username"
+            autocomplete="off">
+          <i matSuffix class="material-icons"
+            matTooltip="Enter your mobile number or email">account_circle</i>
+        </div>
+        <span
+          *ngIf="!loginForm.get('username').valid && loginForm.get('username').touched"
+          class="help-block">Please enter a valid number or email</span>
+      </div>
+      <div class="form-group">
+        <div class="form-block">
+          <input class="form-control"
+            name="password"
+            id="password"
+            placeholder="password"
+            type="password"
+            formControlName="password">
+            <i matSuffix
+            matTooltip="Atleast one of each: capital, small, special character and number. Min length 8 and max 20"
+            class="material-icons">vpn_key</i>
+        </div>
+        <span
+          *ngIf="!loginForm.get('password').valid && loginForm.get('password').touched"
+          class="help-block">Please enter a valid password</span>
+      </div>
+  </mat-card-content>
+  <mat-card-actions align="center">
+      <button mat-raised-button class="login-submit" [disabled]="!loginForm.valid" type="submit">SUBMIT</button>
+  </mat-card-actions>
+  </mat-card>
+</form>

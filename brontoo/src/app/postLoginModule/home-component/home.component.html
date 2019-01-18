@@ -1,0 +1,52 @@
+<mat-card>
+  <mat-card-title>
+      Hi {{ service.getUser() }}
+  </mat-card-title>
+  <mat-card-content class="container-fluid">
+    <div class="row">
+      <div class="col-sm-6">
+          Want to check your IP?
+          <button mat-raised-button
+           (click)="getMyIp()">Click here!</button>
+      </div>
+      <div class="col-sm-6">
+          <div *ngIf="ip.length > 0">
+            Your IP is: <span>{{ ip }}</span>
+          </div>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-sm-6">
+        <mat-form-field appearance="outline" color="accent" style="width: 90%">
+            <mat-label>Filter me!</mat-label>
+            <input type="text" placeholder="enter text here"
+              matInput [matAutocomplete]="fields">
+        </mat-form-field>
+        <mat-autocomplete #fields="matAutocomplete" class="scrollbar">
+            <mat-option *ngFor="let option of options" [value]="option">{{option}}</mat-option>
+        </mat-autocomplete>
+      </div>
+      <div class="col-sm-6" style="flex-direction: row !important">
+        <div class="form-group" style="display: flex">
+            <input type="text" class="form-control"
+            name="username"
+            id="username"
+            placeholder="enter item name"
+            autocomplete="off" [(ngModel)]="newItem"/>
+            <button mat-raised-button
+              (click)="addNewItem()">Add</button>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+      </div>
+      <div class="col-sm-6 scrollbar" style="max-height: 200px; overflow: auto;">
+        <ul class="list-group" style="color: black;">
+          <li class="list-group-item" *ngFor="let option of options">{{option}}</li>
+        </ul>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>

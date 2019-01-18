@@ -1,0 +1,55 @@
+.login-card {
+  max-width: 400px;
+  margin: 10vh auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.login-card-header {
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(240, 102, 0, 0.5);
+}
+.login-card-title {
+  margin: 0 0 0 0 !important;
+  font-weight: bold;
+  color: rgba(240, 102, 0, 1);
+}
+hr {
+  margin: 0 0 0 0 !important;
+  background-color: rgba(240, 102, 0, 0.7);
+  height: 2px;
+}
+.login-card-content {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  background-color: rgba(0, 0, 0, 0.7);
+  min-height: 30vh;
+  padding: 16px;
+  border-style: solid;
+  border-width: 0px;
+  border-radius: 5px;
+}
+.login-submit {
+  min-width: 160px;
+  background-color: rgba(240, 102, 0, 1);
+  color: white;
+  font-weight: bold;
+}
+.login-submit:hover {
+  background-color: rgb(235, 126, 48);
+}
+.login-submit[disabled]{
+  background-color: rgba(0, 0, 0, 0.3);
+  color: grey;
+}
+.form-control {
+  margin-right: 5px;
+}
+.form-block{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

@@ -1,0 +1,6 @@
+<mat-dialog-content>
+  You will be logged out in <span>{{ seconds }} seconds</span>. Press Ok to stay logged in.
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close (click)="this.idle.watch()">Ok</button>
+</mat-dialog-actions>
