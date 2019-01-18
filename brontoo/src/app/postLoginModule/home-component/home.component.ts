@@ -18,8 +18,8 @@ export class HomeComponent implements OnInit {
   constructor(public service: LocalStorageService, public httpClient: HttpClient, private idle: Idle, private keepalive: Keepalive,
     public dialog: MatDialog, private element: ElementRef){}
   ngOnInit(){
-    this.idle.setIdle(60);
-    this.idle.setTimeout(30);
+    this.idle.setIdle(30);
+    this.idle.setTimeout(15);
     this.idle.setInterrupts([new EventTargetInterruptSource(this.element.nativeElement, "mousedown touchstart")]);
     var dialogRef=null;
     this.idle.onTimeout.subscribe(() => {
@@ -28,6 +28,9 @@ export class HomeComponent implements OnInit {
     });
     this.idle.onIdleStart.subscribe(() => {
       dialogRef=this.dialog.open(KeepAliveModal);
+      dialogRef.afterClosed().subscribe((data) => {
+        this.idle.watch();
+      });
     });
 
     this.idle.watch();
