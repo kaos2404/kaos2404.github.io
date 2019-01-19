@@ -27,6 +27,7 @@
 
 body {
   background-color: rgba($app-theme-color, 0.1) !important;
+  user-select: none;
 }
 
 a:hover, i:hover {

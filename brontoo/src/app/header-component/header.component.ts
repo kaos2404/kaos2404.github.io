@@ -1,6 +1,7 @@
+import { Idle } from '@ng-idle/core';
 import { LogoutModal } from './logout-modal/logout-modal.component';
 import { LocalStorageService } from './../shared/services/local-storage.service';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material';
 
 
@@ -10,11 +11,17 @@ import { MatDialog } from '@angular/material';
   styleUrls: ['./header.component.scss']
 })
 
-export class HeaderComponent {
-  constructor(public service: LocalStorageService, public dialog: MatDialog){}
+export class HeaderComponent implements OnInit {
+  dialogRef;
+  constructor(public service: LocalStorageService, public dialog: MatDialog, private idle: Idle){}
+  ngOnInit() {
+    this.idle.onTimeout.subscribe(() => {
+      this.dialogRef.close();
+    });
+  }
   logout(){
-    const dialogRef = this.dialog.open(LogoutModal);
-    dialogRef.afterClosed().subscribe((data) => {
+    this.dialogRef = this.dialog.open(LogoutModal, { disableClose: true });
+    this.dialogRef.afterClosed().subscribe((data) => {
       if(data == true){
         this.service.logout();
       }

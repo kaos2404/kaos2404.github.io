@@ -402,6 +402,21 @@ See the License for the specific language governing permissions and
 limitations under the License.
 
 
+@angular/router
+MIT
+
+@angular/material/bottom-sheet
+
+@angular/material/dialog
+
+@angular/material/datepicker
+
+@angular/material/tooltip
+
+@angular/material/snack-bar
+
+@angular/material/progress-bar
+
 @ng-idle/keepalive
 Apache-2.0
 Copyright 2016 Mike Grabski
@@ -418,21 +433,6 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-
-@angular/router
-MIT
-
-@angular/material/bottom-sheet
-
-@angular/material/dialog
-
-@angular/material/datepicker
-
-@angular/material/tooltip
-
-@angular/material/snack-bar
-
-@angular/material/progress-bar
 
 zone.js
 MIT

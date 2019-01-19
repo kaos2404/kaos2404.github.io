@@ -3,7 +3,6 @@ import { LocalStorageService } from '../../shared/services/local-storage.service
 import { Component, ElementRef, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import {Idle, EventTargetInterruptSource } from '@ng-idle/core';
-import {Keepalive} from '@ng-idle/keepalive';
 import { MatDialog, MatSnackBar } from '@angular/material';
 
 @Component({
@@ -15,7 +14,8 @@ export class HomeComponent implements OnInit {
   newItem: string = '';
   filterItem: string = '';
   ip: string = '';
-  constructor(public snackBar: MatSnackBar, public service: LocalStorageService, public httpClient: HttpClient, private idle: Idle, private keepalive: Keepalive,
+  constructor(public snackBar: MatSnackBar, public service: LocalStorageService,
+    public httpClient: HttpClient, private idle: Idle,
     public dialog: MatDialog, private element: ElementRef){}
   ngOnInit(){
     this.idle.setIdle(this.service.idleTime);
@@ -27,9 +27,10 @@ export class HomeComponent implements OnInit {
       this.service.logout();
     });
     this.idle.onIdleStart.subscribe(() => {
-      dialogRef=this.dialog.open(KeepAliveModal);
+      dialogRef=this.dialog.open(KeepAliveModal, { disableClose: true });
       dialogRef.afterClosed().subscribe((data) => {
-        this.idle.watch();
+        if(data === true)
+          this.idle.watch();
       });
     });
 

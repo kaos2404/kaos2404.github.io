@@ -16,7 +16,7 @@ export class ListFilterPipe implements PipeTransform {
         filtered.push(value);
     });
     if(filtered.length == 0){
-      filtered.push('No data found');
+      filtered.push('No data found.');
     }
     return filtered;
   }

@@ -3,8 +3,8 @@ import { Injectable } from '@angular/core';
 
 @Injectable()
 export class LocalStorageService {
-  idleTime: number = 60;
-  timeoutTime: number = 30;
+  idleTime: number = 20;
+  timeoutTime: number = 10;
   options: string[] = ['One', 'Two', 'Three'];
   emailPattern=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
   numberPattern = /^[7-9][0-9]{9}$/;
