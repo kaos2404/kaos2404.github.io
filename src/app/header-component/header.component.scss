@@ -1,0 +1,14 @@
+@import '../../colors.scss';
+
+.navbar {
+  color: rgba($app-theme-color, 1);
+  &-header {
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgba($app-mid-color, 0.1);
+    & > a {
+      margin: 0 auto;
+      font-weight: bold;
+    }
+  }
+}

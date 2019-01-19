@@ -1,0 +1,35 @@
+@import '../../../colors.scss';
+
+.login-card {
+  max-width: 400px;
+  margin: 10vh auto;
+  background-color: rgba($app-dark-color, 0.7);
+  &-header {
+    background-color: rgba($app-dark-color, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba($app-theme-color, 0.5);
+  }
+  &-title {
+    margin: 0 0 0 0 !important;
+    font-weight: bold;
+    color: rgba($app-theme-color, 1);
+  }
+  &-content {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    background-color: rgba($app-dark-color, 0.7);
+    min-height: 30vh;
+    padding: 16px;
+    border-style: solid;
+    border-width: 0px;
+    border-radius: 5px;
+  }
+}
+
+.login-submit {
+  min-width: 160px;
+}

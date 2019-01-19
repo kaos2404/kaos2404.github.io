@@ -1,0 +1,32 @@
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+  <mat-card class="login-card">
+  <mat-card-header class="login-card-header">
+    <mat-card-title class="login-card-title pull-left">Login</mat-card-title>
+  </mat-card-header>
+  <mat-card-content class="login-card-content">
+    <mat-form-field appearance="outline" color="accent" style="width: 100%">
+            <mat-label>Enter you mobile number or email</mat-label>
+            <input type="text" name="username"
+              id="username"
+              placeholder="user id"
+              formControlName="username"
+              matInput autocomplete="off">
+              <i matSuffix class="material-icons">account_circle</i>
+          </mat-form-field>
+          <mat-form-field appearance="outline" color="accent" style="width: 100%">
+            <mat-label>Enter your password</mat-label>
+            <input type="password" name="password"
+              id="password"
+              placeholder="password"
+              formControlName="password"
+              matInput autocomplete="off">
+            <i matSuffix
+              matTooltip="Atleast one of each: capital, small, special character and number. Min length 8 and max 20"
+            class="material-icons">vpn_key</i>
+          </mat-form-field>
+  </mat-card-content>
+  <mat-card-actions align="center">
+      <button mat-raised-button class="login-submit" [disabled]="!loginForm.valid" type="submit">SUBMIT</button>
+  </mat-card-actions>
+  </mat-card>
+</form>
