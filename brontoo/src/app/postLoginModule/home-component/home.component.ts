@@ -53,6 +53,9 @@ export class HomeComponent implements OnInit {
 
   addNewItem() {
     if(this.newItem !== null && this.newItem.length > 0){
+      if(this.newItem === 'No data found.'){
+        this.newItem = 'No data found'
+      }
       this.service.options.push(this.newItem);
       this.newItem = null;
     }

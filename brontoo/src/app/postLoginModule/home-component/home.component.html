@@ -40,7 +40,7 @@
         <div style="margin-bottom: 8px">Filtered items</div>
         <div class="scrollbar" style="overflow: auto; max-height: 200px;"><ul class="list-group" style="color: black;">
           <ng-container *ngFor="let option of (service.options | listfilter:filterItem)">
-            <li class="list-group-item {{ option === 'No data found'? 'disabled' : '' }}"
+            <li class="list-group-item {{ option === 'No data found.'? 'disabled' : '' }}"
             >{{option}}</li>
           </ng-container>
         </ul></div>
