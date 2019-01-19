@@ -6,6 +6,10 @@ export class LocalStorageService {
   idleTime: number = 60;
   timeoutTime: number = 30;
   options: string[] = ['One', 'Two', 'Three'];
+  emailPattern=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  numberPattern = /^[7-9][0-9]{9}$/;
+  passwordPattern = /^(?=.*[0-9])(?=.*[A-Z])(?=.*[a-z])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,20}$/;
+
   progressBar: boolean = false;
   constructor(public router: Router){}
   login(userid: string){
