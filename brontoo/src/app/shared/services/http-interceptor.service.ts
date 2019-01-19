@@ -7,7 +7,6 @@ import { LocalStorageService } from './local-storage.service';
 export class CustomInterceptor implements HttpInterceptor {
   constructor(public service: LocalStorageService){}
   intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
-    console.log('Interceptor called');
     this.service.progressBar = true;
     return next.handle(req);
   }

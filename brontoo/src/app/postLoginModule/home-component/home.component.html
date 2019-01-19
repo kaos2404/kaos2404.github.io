@@ -7,45 +7,49 @@
       <div class="col-sm-6">
           Want to check your IP?
           <button mat-raised-button
-           (click)="getMyIp()">Click here!</button>
+           (click)="getMyIp()" style="margin-left: 16px !important;">Click here!</button>
       </div>
       <div class="col-sm-6">
           <div *ngIf="ip.length > 0">
-            Your IP is: <span>{{ ip }}</span>
+            Your IP is: <span class="highlight">{{ ip }}</span>
           </div>
       </div>
     </div>
     <hr>
     <div class="row">
       <div class="col-sm-6">
-        <mat-form-field appearance="outline" color="accent" style="width: 90%">
+        <mat-form-field appearance="outline" color="accent" style="width: 100%">
             <mat-label>Filter me!</mat-label>
             <input type="text" placeholder="enter text here"
-              matInput [matAutocomplete]="fields">
+              matInput [(ngModel)]="filterItem" autocomplete="off">
         </mat-form-field>
-        <mat-autocomplete #fields="matAutocomplete" class="scrollbar">
-            <mat-option *ngFor="let option of options" [value]="option">{{option}}</mat-option>
-        </mat-autocomplete>
       </div>
       <div class="col-sm-6" style="flex-direction: row !important">
-        <div class="form-group" style="display: flex">
-            <input type="text" class="form-control"
-            name="username"
-            id="username"
-            placeholder="enter item name"
-            autocomplete="off" [(ngModel)]="newItem"/>
-            <button mat-raised-button
-              (click)="addNewItem()">Add</button>
-        </div>
+        <mat-form-field appearance="outline" color="accent" style="width: 100%; display: flex; flex-direction: column">
+          <mat-label>Add a new item</mat-label>
+          <input type="text" placeholder="enter text here"
+            matInput [(ngModel)]="newItem" autocomplete="off"
+            style="width: 80%">
+          <button matSuffix mat-raised-button
+            (click)="addNewItem()" style="top: -0.5em !important">Add</button>
+        </mat-form-field>
       </div>
     </div>
-    <div class="row">
+    <div class="row" style="align-items: flex-start !important;">
       <div class="col-sm-6">
+        <div style="margin-bottom: 8px">Filtered items</div>
+        <div class="scrollbar" style="overflow: auto; max-height: 200px;"><ul class="list-group" style="color: black;">
+          <ng-container *ngFor="let option of (service.options | listfilter:filterItem)">
+            <li class="list-group-item {{ option === 'No data found'? 'disabled' : '' }}"
+            >{{option}}</li>
+          </ng-container>
+        </ul></div>
       </div>
-      <div class="col-sm-6 scrollbar" style="max-height: 200px; overflow: auto;">
-        <ul class="list-group" style="color: black;">
-          <li class="list-group-item" *ngFor="let option of options">{{option}}</li>
-        </ul>
+      <div class="col-sm-6">
+        <div style="margin-bottom: 8px">All items in the list</div>
+        <div class="scrollbar" style="overflow: auto; max-height: 200px;"><ul class="list-group" style="color: black;">
+          <li class="list-group-item" *ngFor="let option of service.options">{{option}}</li>
+        </ul></div>
       </div>
     </div>
   </mat-card-content>

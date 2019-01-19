@@ -1,4 +1,3 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { KeepAliveModal } from './keep-alive-modal/keep-alive-modal.component';
 import { CommonImportsModule } from '../common-imports.module';
 import { NgModule } from '@angular/core';

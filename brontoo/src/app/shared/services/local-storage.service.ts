@@ -3,6 +3,9 @@ import { Injectable } from '@angular/core';
 
 @Injectable()
 export class LocalStorageService {
+  idleTime: number = 60;
+  timeoutTime: number = 30;
+  options: string[] = ['One', 'Two', 'Three'];
   progressBar: boolean = false;
   constructor(public router: Router){}
   login(userid: string){

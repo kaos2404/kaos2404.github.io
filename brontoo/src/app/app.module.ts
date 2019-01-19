@@ -9,12 +9,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { LocalStorageService } from './shared/services/local-storage.service';
 import { NgIdleKeepaliveModule } from '@ng-idle/keepalive';
 import { FormsModule } from '@angular/forms';
+import 'hammerjs';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    LogoutModal
+    LogoutModal,
   ],
   imports: [
     BrowserModule,

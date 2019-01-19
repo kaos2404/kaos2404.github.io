@@ -1,0 +1,54 @@
+@import '../../../colors.scss';
+
+mat-card {
+  height: fit-content;
+  min-height: 82vh;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+mat-card-title {
+  padding: 8px;
+  font-weight: bold;
+  color: rgba($app-theme-color, 1);
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 1px;
+  border-style: solid;
+  border-bottom-color: rgba($app-theme-color, 1);
+}
+
+mat-card-content{
+  margin-top: 16px;
+}
+
+.row {
+  align-items: center;
+}
+.col-sm-6, .row {
+  margin-top: 8px !important;
+  margin-bottom: 8px !important;
+}
+
+mat-option {
+  border-style: solid;
+  border-color: rgba($app-mid-color, 0.25);
+  border-width: 0px 0.5px 1px 0.5px;
+  color: $app-dark-color;
+  background-color: $app-light-color;
+  &:hover {
+    background-color: rgba($app-mid-color, 1) !important;
+  }
+}
+
+.list-group-item {
+  padding: .5rem 1.25rem !important;
+}
+
+.mat-option.mat-option-disabled {
+  color: rgba($app-mid-color, 1) !important;
+  &:hover {
+    background-color: $app-light-color !important;
+  }
+}
