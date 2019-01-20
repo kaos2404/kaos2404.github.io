@@ -7,8 +7,9 @@ export class LocalStorageService {
   timeoutTime: number = 30;
   options: string[] = ['One', 'Two', 'Three'];
 
+  usernamePattern=/(^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$)|(^[6-9][0-9]{9}$)/;
   emailPattern=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-  numberPattern = /^[7-9][0-9]{9}$/;
+  numberPattern = /^[6-9][0-9]{9}$/;
   passwordPattern = /^(?=.*[0-9])(?=.*[A-Z])(?=.*[a-z])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,20}$/;
 
   progressBar: boolean = false;

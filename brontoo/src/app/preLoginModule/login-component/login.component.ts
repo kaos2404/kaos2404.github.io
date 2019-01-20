@@ -26,7 +26,7 @@ export class LoginComponent implements OnInit {
   }
 
   userNameValidator(formControl: FormControl): {[s: string]: boolean} {
-    if(formControl.value !== null && (formControl.value.match(this.service.emailPattern) || formControl.value.match(this.service.numberPattern))){
+    if(formControl.value !== null && formControl.value.match(this.service.usernamePattern)){
           return null;
     }
     return {'isInValid': true};
