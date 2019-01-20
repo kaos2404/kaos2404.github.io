@@ -16,7 +16,8 @@ export class HeaderComponent implements OnInit {
   constructor(public service: LocalStorageService, public dialog: MatDialog, private idle: Idle){}
   ngOnInit() {
     this.idle.onTimeout.subscribe(() => {
-      this.dialogRef.close();
+      if(typeof this.dialogRef !== 'undefined')
+        this.dialogRef.close();
     });
   }
   logout(){
