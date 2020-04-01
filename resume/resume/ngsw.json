@@ -1,0 +1,76 @@
+{
+  "configVersion": 1,
+  "timestamp": 1585715867060,
+  "index": "https://kaos2404.github.io/resume/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "https://kaos2404.github.io/resume/9-es2015.2aebc8faf6254cd1b9f3.js",
+        "https://kaos2404.github.io/resume/9-es5.2aebc8faf6254cd1b9f3.js",
+        "https://kaos2404.github.io/resume/favicon.ico",
+        "https://kaos2404.github.io/resume/index.html",
+        "https://kaos2404.github.io/resume/main-es2015.4864c4d718f7ecf2b698.js",
+        "https://kaos2404.github.io/resume/main-es5.4864c4d718f7ecf2b698.js",
+        "https://kaos2404.github.io/resume/manifest.webmanifest",
+        "https://kaos2404.github.io/resume/polyfills-es2015.e04cc248bdf7bc513154.js",
+        "https://kaos2404.github.io/resume/polyfills-es5.9827658a14ff0b1272c7.js",
+        "https://kaos2404.github.io/resume/runtime-es2015.2b59fb03fea491e4d5ca.js",
+        "https://kaos2404.github.io/resume/runtime-es5.2b59fb03fea491e4d5ca.js",
+        "https://kaos2404.github.io/resume/styles.88a1afdf7582a05f3033.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "https://kaos2404.github.io/resume/assets/themes/dark-cyan.css",
+        "https://kaos2404.github.io/resume/assets/themes/dark-teal.css",
+        "https://kaos2404.github.io/resume/assets/themes/light-blue.css",
+        "https://kaos2404.github.io/resume/assets/themes/light-purple.css"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "https://kaos2404.github.io/resume/9-es2015.2aebc8faf6254cd1b9f3.js": "450c813a31971a45894f4a902b02642dec861a08",
+    "https://kaos2404.github.io/resume/9-es5.2aebc8faf6254cd1b9f3.js": "8bbfda316944815fb312731f2d4a9eeae8992504",
+    "https://kaos2404.github.io/resume/assets/themes/dark-cyan.css": "32a98d93977aa0dbac5cddb3c791cd33564e8266",
+    "https://kaos2404.github.io/resume/assets/themes/dark-teal.css": "71cf44665ce53cc4dd29a2194b1ef4399bcfbce0",
+    "https://kaos2404.github.io/resume/assets/themes/light-blue.css": "c06e05d5ad92ba43ce0f80873efa0d7c94053059",
+    "https://kaos2404.github.io/resume/assets/themes/light-purple.css": "b83abbfad53abf6c1f603419cf2fe02a47654698",
+    "https://kaos2404.github.io/resume/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "https://kaos2404.github.io/resume/index.html": "d0165c511b9593a8b38cdd72b68e5687e3f64e9e",
+    "https://kaos2404.github.io/resume/main-es2015.4864c4d718f7ecf2b698.js": "b80570db0d5ce510b1507625aedbc9829c80cf7d",
+    "https://kaos2404.github.io/resume/main-es5.4864c4d718f7ecf2b698.js": "ed43663e87ca862793007adadea4d83f4bd92cb1",
+    "https://kaos2404.github.io/resume/manifest.webmanifest": "04d9a7bd8e60e1589d475dac03fe107ac24e3210",
+    "https://kaos2404.github.io/resume/polyfills-es2015.e04cc248bdf7bc513154.js": "6809b849ef6c2f786ef09b274f14d01e58eb03c7",
+    "https://kaos2404.github.io/resume/polyfills-es5.9827658a14ff0b1272c7.js": "894821b89b7b7cb265edfe373ec976986ff68fa8",
+    "https://kaos2404.github.io/resume/runtime-es2015.2b59fb03fea491e4d5ca.js": "f713d62fdcbbeaf87812a7a7fefea523f00401f0",
+    "https://kaos2404.github.io/resume/runtime-es5.2b59fb03fea491e4d5ca.js": "fd37086f09ae434cb65ee7712c0a1cce61e943cf",
+    "https://kaos2404.github.io/resume/styles.88a1afdf7582a05f3033.css": "d8b10cf33ac7d986cd4ce29bfb2918d20459e0c2"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
