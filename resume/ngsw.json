@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1585889705500,
+  "timestamp": 1585890794645,
   "index": "https://kaos2404.github.io/resume/index.html",
   "assetGroups": [
     {
@@ -8,8 +8,8 @@
       "installMode": "prefetch",
       "updateMode": "prefetch",
       "urls": [
-        "https://kaos2404.github.io/resume/9-es2015.5be374c5b137299219bf.js",
-        "https://kaos2404.github.io/resume/9-es5.5be374c5b137299219bf.js",
+        "https://kaos2404.github.io/resume/9-es2015.286d2bdcfe59ff3e35d5.js",
+        "https://kaos2404.github.io/resume/9-es5.286d2bdcfe59ff3e35d5.js",
         "https://kaos2404.github.io/resume/favicon.ico",
         "https://kaos2404.github.io/resume/index.html",
         "https://kaos2404.github.io/resume/main-es2015.d34fcf6b1865ada7ffcb.js",
@@ -17,8 +17,8 @@
         "https://kaos2404.github.io/resume/manifest.webmanifest",
         "https://kaos2404.github.io/resume/polyfills-es2015.e04cc248bdf7bc513154.js",
         "https://kaos2404.github.io/resume/polyfills-es5.9827658a14ff0b1272c7.js",
-        "https://kaos2404.github.io/resume/runtime-es2015.cebf4704614c9f593f7f.js",
-        "https://kaos2404.github.io/resume/runtime-es5.cebf4704614c9f593f7f.js",
+        "https://kaos2404.github.io/resume/runtime-es2015.e09e7a78016cfd0e9ac7.js",
+        "https://kaos2404.github.io/resume/runtime-es5.e09e7a78016cfd0e9ac7.js",
         "https://kaos2404.github.io/resume/styles.f55a38e174e0e19845ae.css"
       ],
       "patterns": []
@@ -47,8 +47,8 @@
   ],
   "dataGroups": [],
   "hashTable": {
-    "https://kaos2404.github.io/resume/9-es2015.5be374c5b137299219bf.js": "9f613cb57363921b6e0eda4e56766344b26847b8",
-    "https://kaos2404.github.io/resume/9-es5.5be374c5b137299219bf.js": "ee86de74e931b437f0ede22d50844b2e0cf09b97",
+    "https://kaos2404.github.io/resume/9-es2015.286d2bdcfe59ff3e35d5.js": "4500d3837212c5f5a69044a83d4ccb12b9022d05",
+    "https://kaos2404.github.io/resume/9-es5.286d2bdcfe59ff3e35d5.js": "97c4e45977782a9aad81e354b4cac71d2365f27b",
     "https://kaos2404.github.io/resume/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
     "https://kaos2404.github.io/resume/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
     "https://kaos2404.github.io/resume/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
@@ -63,14 +63,14 @@
     "https://kaos2404.github.io/resume/assets/themes/light-blue.css": "7a9a1e87ecc677deb358983b517b58f05bc38900",
     "https://kaos2404.github.io/resume/assets/themes/light-purple.css": "736b1bcdefe6484f1bb5688c3ab82598bbadff93",
     "https://kaos2404.github.io/resume/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "https://kaos2404.github.io/resume/index.html": "8e46d0cc75b8aed4e1bb4f8578f4225c32ef5715",
+    "https://kaos2404.github.io/resume/index.html": "7680ca20f9ba55ef42e50ce861eee3ce9c52ef40",
     "https://kaos2404.github.io/resume/main-es2015.d34fcf6b1865ada7ffcb.js": "f7f5c28493318ad67ff45fd849ce0361e5ec1018",
     "https://kaos2404.github.io/resume/main-es5.d34fcf6b1865ada7ffcb.js": "7f80ded9d4f00c89cb32e9a2b127dc1b105b01eb",
     "https://kaos2404.github.io/resume/manifest.webmanifest": "c3909d8a6c2da6d9aae51bcc14f61c3afbfed904",
     "https://kaos2404.github.io/resume/polyfills-es2015.e04cc248bdf7bc513154.js": "6809b849ef6c2f786ef09b274f14d01e58eb03c7",
     "https://kaos2404.github.io/resume/polyfills-es5.9827658a14ff0b1272c7.js": "894821b89b7b7cb265edfe373ec976986ff68fa8",
-    "https://kaos2404.github.io/resume/runtime-es2015.cebf4704614c9f593f7f.js": "17af3ca505b1c3797ce5361498b8a093ae0e4287",
-    "https://kaos2404.github.io/resume/runtime-es5.cebf4704614c9f593f7f.js": "83c1f42665f234014c8b38cdfbe5d6c6c4cca56b",
+    "https://kaos2404.github.io/resume/runtime-es2015.e09e7a78016cfd0e9ac7.js": "c9b1e5d9bc2483e09b978e4599e30ba025274faf",
+    "https://kaos2404.github.io/resume/runtime-es5.e09e7a78016cfd0e9ac7.js": "ed9e644f539c03d856aabf9792c4b3387c0bffb8",
     "https://kaos2404.github.io/resume/styles.f55a38e174e0e19845ae.css": "fa1b55beba1e31c413415e9c00235a54d7e26cbc"
   },
   "navigationUrls": [
