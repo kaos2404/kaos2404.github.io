@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1587522401591,
+  "timestamp": 1587524435308,
   "index": "https://kaos2404.github.io/resume/index.html",
   "assetGroups": [
     {
@@ -12,8 +12,8 @@
         "https://kaos2404.github.io/resume/9-es5.46b1337de51e5be6bd80.js",
         "https://kaos2404.github.io/resume/favicon.ico",
         "https://kaos2404.github.io/resume/index.html",
-        "https://kaos2404.github.io/resume/main-es2015.f5a2d5020dd904b8844a.js",
-        "https://kaos2404.github.io/resume/main-es5.f5a2d5020dd904b8844a.js",
+        "https://kaos2404.github.io/resume/main-es2015.60be9f9ac13b4b5fdfde.js",
+        "https://kaos2404.github.io/resume/main-es5.60be9f9ac13b4b5fdfde.js",
         "https://kaos2404.github.io/resume/manifest.webmanifest",
         "https://kaos2404.github.io/resume/polyfills-es2015.e04cc248bdf7bc513154.js",
         "https://kaos2404.github.io/resume/polyfills-es5.9827658a14ff0b1272c7.js",
@@ -79,9 +79,9 @@
     "https://kaos2404.github.io/resume/assets/themes/light-blue.css": "0e63ace1eb527b403a91fa2921e9f7dcf8552b52",
     "https://kaos2404.github.io/resume/assets/themes/light-purple.css": "5c43f0acd491e32b2f2ec5ed5407763b65f08d0c",
     "https://kaos2404.github.io/resume/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "https://kaos2404.github.io/resume/index.html": "f24806968e834355714ce3c53865f043ac0dc81a",
-    "https://kaos2404.github.io/resume/main-es2015.f5a2d5020dd904b8844a.js": "579148bf678d86f4edb11854968f51989746b0e8",
-    "https://kaos2404.github.io/resume/main-es5.f5a2d5020dd904b8844a.js": "cb51c633cbc6165731a03d1761b9c67aea810ede",
+    "https://kaos2404.github.io/resume/index.html": "07596b27c6c09fba81c964ac062835ebc3202b5f",
+    "https://kaos2404.github.io/resume/main-es2015.60be9f9ac13b4b5fdfde.js": "b928b22834d788e3a9c0beac38c575de667e9328",
+    "https://kaos2404.github.io/resume/main-es5.60be9f9ac13b4b5fdfde.js": "40fe813935c21a92534225d18a9b424f3a48ec74",
     "https://kaos2404.github.io/resume/manifest.webmanifest": "c22099647bad004b8a1fb788a42abe6d3487fb12",
     "https://kaos2404.github.io/resume/polyfills-es2015.e04cc248bdf7bc513154.js": "6809b849ef6c2f786ef09b274f14d01e58eb03c7",
     "https://kaos2404.github.io/resume/polyfills-es5.9827658a14ff0b1272c7.js": "894821b89b7b7cb265edfe373ec976986ff68fa8",
